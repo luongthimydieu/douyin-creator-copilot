@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "douyin-creator-copilot"
+version = "0.1.0"
+description = "抖音/B站历史情感内容运营系统：选题、分镜、成本、元数据与数据周报"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "WangZhiwen" }]
+keywords = ["douyin", "bilibili", "content-creation", "ai-video", "creator-tools", "python"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/luongthimydieu/douyin-creator-copilot"
+Repository = "https://github.com/luongthimydieu/douyin-creator-copilot"
+Issues = "https://github.com/luongthimydieu/douyin-creator-copilot/issues"
+
+[project.scripts]
+copilot = "copilot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["copilot*"]

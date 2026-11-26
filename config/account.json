@@ -1,0 +1,19 @@
+{
+  "name": "故纸余温",
+  "handle": "guzhiyuwen",
+  "positioning": "历史中的人性与情感",
+  "slogan": "在旧纸堆里，打捞人的温度",
+  "platforms": ["douyin", "bilibili"],
+  "cadence": "weekly",
+  "budget_cny_month": 2000,
+  "weekly_hours": 20,
+  "target_duration_sec": 180,
+  "audience": "25-45岁，对历史、人文、情感故事感兴趣，愿意为内容和书籍付费",
+  "tone": "克制、温暖、有文学性；不煽情、不猎奇、不做伪历史",
+  "pillars": [
+    {"name": "历史情感故事", "share": 0.7},
+    {"name": "历史冷知识/文物", "share": 0.2},
+    {"name": "纯情感测试", "share": 0.1}
+  ],
+  "series": ["人间旧档", "被遗忘的人", "一件文物的一生"]
+}

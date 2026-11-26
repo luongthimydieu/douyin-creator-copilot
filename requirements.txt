@@ -1,0 +1,4 @@
+# 核心功能仅使用 Python 标准库。
+# 后续接入视频/LLM API 时再安装：
+# httpx>=0.27
+# python-dotenv>=1.0

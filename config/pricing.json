@@ -1,0 +1,61 @@
+{
+  "currency": "CNY",
+  "unit": "per_generated_second",
+  "updated": "2026-11",
+  "note": "价格为公开页面/第三方核对后的近似值，下单前以官方为准；实际成本由重试次数主导。",
+  "models": {
+    "seedance_2_5": {
+      "label": "Seedance 2.5",
+      "prices_cny_per_sec": {"480p": 0.67, "720p": 1.51, "1080p": 3.74, "4k": 6.03}
+    },
+    "seedance_2_0": {
+      "label": "Seedance 2.0",
+      "prices_cny_per_sec": {"480p": 0.46, "720p": 0.99, "1080p": 2.48, "4k": 5.05}
+    },
+    "seedance_2_0_fast": {
+      "label": "Seedance 2.0 fast",
+      "prices_cny_per_sec": {"480p": 0.37, "720p": 0.80}
+    },
+    "seedance_2_0_mini": {
+      "label": "Seedance 2.0 mini",
+      "prices_cny_per_sec": {"480p": 0.23, "720p": 0.50}
+    },
+    "jimeng_3_0": {
+      "label": "即梦 3.0",
+      "prices_cny_per_sec": {"720p": 0.28, "1080p": 0.63}
+    },
+    "kling_4_0": {
+      "label": "可灵 4.0",
+      "prices_cny_per_sec": {"720p": 1.13, "1080p": 1.69}
+    },
+    "kling_4_0_flash": {
+      "label": "可灵 4.0 Flash",
+      "prices_cny_per_sec": {"720p": 0.68}
+    },
+    "hailuo_h3": {
+      "label": "海螺 H3",
+      "prices_cny_per_sec": {"768p": 0.58, "2k": 0.93}
+    },
+    "vidu_q4": {
+      "label": "Vidu Q4",
+      "prices_cny_per_sec": {"720p": 0.59, "1080p": 0.75, "4k": 2.44}
+    }
+  },
+  "profiles": {
+    "trial": {
+      "description": "试水：720p 为主，控制成本",
+      "generation_ratio": 1.8,
+      "mix": [["jimeng_3_0", "720p", 0.7], ["seedance_2_0_fast", "720p", 0.3]]
+    },
+    "standard": {
+      "description": "标准：720p 为主 + 20% 1080p 关键镜头",
+      "generation_ratio": 1.8,
+      "mix": [["seedance_2_0", "720p", 0.8], ["seedance_2_0", "1080p", 0.2]]
+    },
+    "premium": {
+      "description": "精品：1080p 为主，Hero 镜头用可灵",
+      "generation_ratio": 2.2,
+      "mix": [["seedance_2_5", "1080p", 0.6], ["kling_4_0", "1080p", 0.4]]
+    }
+  }
+}

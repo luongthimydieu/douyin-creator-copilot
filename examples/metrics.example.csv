@@ -1,0 +1,3 @@
+platform,episode_slug,published_at,captured_at,hours_since_publish,views,likes,comments,shares,favorites,followers_delta,avg_watch_sec,completion_rate,traffic_search,traffic_recommend
+douyin,ep-example,2026-11-25T19:00:00,2026-11-26T19:00:00,24,1200,45,8,3,20,12,35.5,0.22,180,900
+bilibili,ep-example,2026-11-25T20:00:00,2026-11-26T20:00:00,24,800,30,5,2,15,6,42.0,0.31,60,700
